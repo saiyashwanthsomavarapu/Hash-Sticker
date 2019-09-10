@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+	<form action="" method="POST">
+		<input type="text" name="identity">
+		<input  type="submit" value="fetch">
+	</form>
+	<h1>Data i obtained</h1>
+	<table>
+		<thead>
+			<th>model</th>
+			<th>user</th>
+		</thead>
+		{% for fetch in fetched %}
+		<tbody>
+			<tr>
+				<td>{{ fetch.model }}</td>
+								<td>{{ fetch.user }}</td>
+			</tr>
+		</tbody>
+		{% endfor %}
+	</table>
+{% endblock %}

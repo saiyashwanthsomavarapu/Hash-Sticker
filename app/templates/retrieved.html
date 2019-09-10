@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div class="container " style="padding: 50px 50px 50px 50px;margin-top: 40px;background: #fff;border-radius: 5px;"> 
+	<table border="0">
+		<tr>
+			<th>Name</th>
+			<th>Card</th>
+			<th>Card No</th>
+			<th>Date Of Buy</th>
+			<th>Device Model</th>
+		</tr>
+		{% for fetch in fetched %}
+		<tr>
+			<td>{{ fetch.name }}</td>
+			<td>{{ fetch.card }}</td>
+			<td>{{ fetch.number}}</td>
+			<td>{{ fetch.cal }}</td>
+			<td>{{ fetch.model }}</td>
+		</tr>
+		{% endfor %}
+	</table>
+</div>
+{% endblock %}

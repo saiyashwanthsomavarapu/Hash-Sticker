@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<div class="container " style="padding: 50px 50px 50px 50px;margin-top: 40px;background: #fff;border-radius: 5px;">
+	<div class="keydiv">
+		<div class="field has-addons">
+		  <p class="control is-expanded">
+		    <input class="input" type="text" placeholder="Key here" value="{{ identity }}" id="key">
+		  </p>
+		  <p class="control">
+		    <button class="button is-primary" onclick="copyToClipboard('#key').value()">
+		      Copy
+		    </button>
+		  </p>
+		</div>
+	</div>
+</div>
+<a href="/"<button style="margin-left: 500px;margin-top: 30px;" class="button is-primary ">Back</button></a>
+{% endblock %}

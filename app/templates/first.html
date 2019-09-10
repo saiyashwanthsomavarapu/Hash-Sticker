@@ -1,0 +1,82 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div class="container " style="padding: 50px 50px 50px 50px;margin-top: 40px;background: #fff;border-radius: 5px;"> 
+	<form action="" method="POST">
+		<div class="field is-horizontal">
+	  		<div class="field-label is-normal">
+	    		<label class="label">Model</label>
+	  		</div>
+	  		<div class="field-body">
+	    		<div class="field">
+	      			<p class="control is-expanded ">
+	        		<input class="input" type="text" name="model" placeholder="Eg. CF1NF32">  
+	      			</p>
+	    		</div>
+	  		</div>
+		</div>
+		<div class="field is-horizontal">
+		 	<div class="field-label is-normal">
+	    		<label class="label">Name</label>
+	  		</div>
+	  		<div class="field-body">
+			    <div class="field">
+			    	<p class="control is-expanded  has-icons-right">
+	        		<input class="input " type="text" name="name" placeholder="Eg. John Smith Paul">   
+	      			</p>
+	    		</div>
+	  		</div>
+		</div>
+		<div class="field is-horizontal">
+	  		<div class="field-label is-normal">
+	   			<label class="label">Date</label>
+	  		</div>
+	  		<div class="field-body"> 
+ 			    <div class="field">
+	    	  		<p class="control is-expanded  has-icons-right">
+	        		<input class="input " type="text" name="cal" placeholder="DD - MM -YYY"> 
+			      	</p>
+	    		</div>
+	  		</div>
+		</div>
+<!-- 		<div class="field is-horizontal">
+	  		<div class="field-label is-normal">
+	   			<label class="label">Card Type</label>
+	  		</div>
+	  		<div class="field-body">
+	    		<div class="field">
+	      			<p class="control is-expanded has-icons-right">
+	        			<input class="input" name="card" type="text" placeholder="Card Type">
+	      			</p>
+	    		</div>
+	  		</div>
+		</div>
+ -->		<div class="field is-horizontal">
+			<div class="field-label is-normal">
+	    		<label class="label">No:</label>
+	  		</div>
+	  		<div class="field-body">
+	    		<div class="field">
+	      			<p class="control is-expanded has-icons-right">
+	        			<input class="input" name="number" type="text" placeholder="Card No">
+	     		 	</p>
+	    		</div>
+	  		</div>
+		</div>
+		<div class="field is-horizontal">
+		  	<div class="field-label">
+	  		</div>
+	  		<div class="field-body">
+	    		<div class="field">
+	      			<div class="control">
+	        			<button class="button is-primary">
+	          				Generate Key
+	        			</button>
+	      			</div>
+	    		</div>
+	  		</div>
+		</div>
+	</form>
+</div>
+{% endblock %}

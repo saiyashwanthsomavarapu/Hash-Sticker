@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Stickr</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../static/img/stickr-nano-128.png" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/bulma.min.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 	
+
+    <style type="text/css">
+    	th,td{
+    		padding: 20px;
+    	}
+
+    </style>
+  </head>
+<body style="background: #f5f5f5; height: 645px;">
+{% include 'includes/_navbar.html' %}
+<div class="container">
+	<div class="notification">
+	 	<p style="font-size: 40px;">Verfication</p>
+	</div>
+</div>
+<!-- <div class="container " style="padding: 50px 50px 50px 50px;margin-top: 40px;background: #fff;border-radius: 5px;"> -->
+	{% block body %}{% endblock %}
+</div>
+	
+</body>
+</html>
